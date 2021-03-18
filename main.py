@@ -4,7 +4,7 @@ This is a demonstration of how to complete the shopping list task. The shopping 
 I always start a program with a docstring'''
 
 #Set variables: user_items as empty list, and add_more as True
-user_items = ['']
+user_items = []
 add_more = True
 
 #Set user input name - greet user
@@ -13,10 +13,11 @@ print("Hello {}.  Let's make a list!" .format(name))
 
 #Begin loop (loop while add_more True)
 while add_more == True:
-#User input  add item to user_items #add user item
-    user_items = user_items.append(input("What item would you like to add?  ")
+#User input  add item to user_items
+    #add user item
+    user_items.append(input("What would you like to add?  "))
 #Selection check add_more is still true - loop or else 
-    more_items = input("Would you like to add more items?  Y/N  ")
+    more_items = input("Would you like to add more items?  Y/N")
     if more_items == "Y":
         add_more = True
     else:
