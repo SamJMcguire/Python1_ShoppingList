@@ -8,17 +8,15 @@ user_items = ['']
 add_more = True
 
 #Set user input name - greet user
-name = input("What is your name"  ?)
+name = input("What is your name?  ")
 print("Hello {}.  Let's make a list!" .format(name))
 
 #Begin loop (loop while add_more True)
 while add_more == True:
-#User input  add item to user_items
-    item = input("What would you like to add?  ")
-#add user item
-    user_items = user_items.append(item)
+#User input  add item to user_items #add user item
+    user_items = user_items.append(input("What item would you like to add?  ")
 #Selection check add_more is still true - loop or else 
-    more_items = input("Would you like to add more items?  Y/N")
+    more_items = input("Would you like to add more items?  Y/N  ")
     if more_items == "Y":
         add_more = True
     else:
